@@ -1,3 +1,14 @@
+:root{
+     --bg-color: #FAA0A0;
+     --light-pink: #ffc6c7;
+     --deeper-black: #292828;
+     --light-black: #474747;
+     --lighter-black: #626262;
+     --text-color: #fff;
+     --text-family: "Arial", sans-serif;
+     --pure-black: black;
+}
+
 /* Global  */
 
 html{
@@ -17,13 +28,8 @@ body{
      padding: 0;
      margin: 0;
      display: flex;
-     font-size: 16px;
-     line-height: 1.5 ;
-     font-family: "Arial", sans-serif;
      flex-direction: column;
      height: 100%;
-     background-color: #fff;
-     color: #222;
 }
 
 img{
@@ -37,11 +43,148 @@ img{
      max-width: 1200px;
      margin-left: auto;
      margin-right: auto;
-     padding-left: 50px;
-     padding-right: 50px;
+     padding-left: 200px;
+     /* padding-right: 200px; */
 }
 
 /* Main content  */
 .main-content{
      flex-grow: 1;
+}
+
+.main-content {
+     background-color: var(--bg-color);
+     color: var(--text-color);
+}
+.navbar {
+     margin-top: 80px;
+}
+.site-navbar {
+     padding: 0;
+     display: flex;
+     align-items: center;
+}
+.navbar-list {
+     list-style-type: none;
+     text-transform: uppercase;
+     font-family: var(--text-family);
+     font-size: 60px;
+     font-weight: bold;
+}
+.navbar-list:not(:last-child){
+     margin-right: 40px;
+}
+
+.navbar-list-link{
+     text-decoration: none;
+     color: var(--text-color);
+     opacity: 0.4;
+
+}
+.navbar-list-link:hover{
+     opacity: 0.7;
+     transition: 0.3s ease;
+}
+.navbar-list-link:active{
+     opacity: 1;
+     transition: 0.3s ease;
+}
+.navbar-text {
+     width: 650px;
+     font-size: 20px;
+}
+.card-section {
+}
+
+/* slider button  */
+.right-btn-wraper{
+     position: relative;
+}
+.slider-btn {
+     width: 100px;
+     height: 100px;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-color: var(--light-pink);
+     border: none;
+     cursor: pointer;
+     opacity: 0.6;
+     transition: 0.3s ease;
+
+}
+.slider-btn-right {
+     position: absolute;
+     top: 50%;
+     left: -10%;
+     background-image: url("../img/left-arrow.png") ;
+}
+.slider-btn-right:hover{
+     background-color: var(--text-color);
+}
+.card-inner {
+     display: flex;
+}
+.card{
+     width: 300px;
+     height: 300px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding-right: 60px;
+}
+.timer {
+     background-color: var(--lighter-black);
+}
+.card-text {
+     margin: 0;
+     padding: 0;
+     font-size: 25px;
+     color: var(--bg-color);
+}
+.card-description {
+     margin: 0;
+     padding: 0;
+     margin-top: 10px;
+     font-size: 30px;
+     font-weight: bold;
+}
+.temperature {
+     background-color: var(--light-black);
+}
+.load {
+     background-color: var(--deeper-black);
+}
+.start-btn-wrapper{
+
+}
+
+/* Slider buttn  */
+.start-btn {
+     background-color: var(--pure-black);
+     color: var(--text-color);
+     width: 250px;
+     font-size: 20px;
+     text-transform: uppercase;
+     font-weight: normal;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     border:none;
+     border-radius: 5px;
+     margin-left: 10px;
+     transform: translateY(-30px);
+     margin-left: 25px;
+     cursor: pointer;
+     transition: 0.3s ease;
+}
+.start-btn:hover{
+     transform: translateY(-40px);
+}
+.slider-btn-left {
+     position: absolute;
+     top: 30%;
+     right: 8.3%;
+}
+.slider-btn-left:hover{
+     background-color: var(--text-color);
 }

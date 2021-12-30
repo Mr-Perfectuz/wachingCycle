@@ -11,38 +11,59 @@
      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-     <div class="main-content">
-          <heaeder class="navbar">
-               <ul class="site-navbar">
-                    <li class="navbar-list"><a href="#">synthetic</a></li>
-                    <li class="navbar-list"><a href="#"></a>wool</li>
-                    <li class="navbar-list"><a href="#"></a>denim</li>
-                    <li class="navbar-list"><a href="#"></a>silk</li>
-                    <li class="navbar-list"><a href="#"></a>line</li>
-               </ul>
-               <p class="navbar-text">Loads should be under 8 pounds. it is recommended using neutral
-                    detergent to provent damage to the cloth and to improve the washing results.
-               </p>
-          </heaeder>
 
-          <div class="card-section">
-               <button class="slider-btn slider-btn-right"></button>
-               <div class="card-inner">
-                    <div class="timer">
-                         <h3 class="card-text">timer</h3>
-                         <h2 class="card-description">45 min</h2>
-                    </div>
-                    <div class="temperature">
-                         <h3 class="card-text">temperature</h3>
-                         <h2 class="card-description">cold</h2>
-                    </div>
-                    <div class="load">
-                         <h3 class="card-text">load</h3>
-                         <h2 class="card-description">medium</h2>
-                    </div>
-                    <button class="start-btn">start</button>
+     <div class=" main-content">
+          <div class="container">
+
+               <!-- Navbar  -->
+               <div class="navbar">
+                    <ul class="site-navbar">
+                         <li class="navbar-list"><a class="navbar-list-link" href="#">synthetic</a></li>
+                         <li class="navbar-list"><a class="navbar-list-link" href="#">wool</a></li>
+                         <li class="navbar-list"><a class="navbar-list-link" href="#">denim</a></li>
+                         <li class="navbar-list"><a class="navbar-list-link" href="#">silk</a></li>
+                         <li class="navbar-list"><a class="navbar-list-link" href="#">line</a></li>
+                    </ul>
+                    <p class="navbar-text">Loads should be under 8 pounds. it is recommended using neutral
+                         detergent to provent damage to the cloth and to improve the washing results.
+                    </p>
                </div>
-               <button class="slider-btn slider-btn-left"></button>
+
+               <!-- Card section  -->
+               <div class="card-section">
+
+                    <!-- Right button  -->
+                    <div class="right-btn-wraper">
+                         <button class="slider-btn slider-btn-right">
+                              <img class="right-btn-img" src="./img/left.svg" alt="right arrow">
+                         </button>
+                    </div>
+
+                    <div class="card-inner">
+                         <div class="timer card">
+                              <h3 class="card-text">Timer</h3>
+                              <p class="card-description">45 min </p>
+                         </div>
+                         <div class="card temperature ">
+                              <h3 class="card-text">Temperature</h3>
+                              <p class="card-description">Cold</p>
+                         </div>
+                         <div class="card load">
+                              <h3 class="card-text">Load</h3>
+                              <p class="card-description">Medium</p>
+                         </div>
+                    </div>
+                    <div class="start-btn-wrapper">
+                         <button class="start-btn">start</button>
+                    </div>
+
+                    <!-- Left button  -->
+                    <div class="left-btn-wrapper">
+                         <button class="slider-btn slider-btn-left">
+                              <img class="left-btn-img" src="./img/right.svg" alt="left arrow">
+                         </button>
+                    </div>
+               </div>
           </div>
      </div>
      <script src="/js/main.js"></script>
