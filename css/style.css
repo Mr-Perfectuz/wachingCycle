@@ -124,6 +124,17 @@ img{
 .card-inner {
      display: flex;
 }
+/* Slider  */
+.slider{
+
+}
+.passive{
+     display: none;
+}
+
+.avtive{
+     display: block;
+}
 .card{
      width: 300px;
      height: 300px;
@@ -180,10 +191,14 @@ img{
 .start-btn:hover{
      transform: translateY(-40px);
 }
+.left-btn-wrapper{
+     position: relative;
+}
 .slider-btn-left {
      position: absolute;
-     top: 30%;
-     right: 8.3%;
+     top: -40%;
+     right: 0%;
+     transform: translateY(-300px);
 }
 .slider-btn-left:hover{
      background-color: var(--text-color);
